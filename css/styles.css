@@ -1,0 +1,108 @@
+/* 全体 */
+body{
+  font-family: "Gothic A1",'Franklin Gothic Medium', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ヘッダー */
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+}
+.header-title{
+  font-size: 1.5em;
+  margin-right: 2em;
+}
+.header-nav-list{
+  font-weight: bold;
+  display: flex;
+}
+.header-nav-list__item:not(:last-child){
+  margin-right: 30px;
+}
+
+/* 導入 */
+.solution-image{
+  position: relative;
+}
+img.solution-image{
+  width: 100%;
+}
+.solution-container{
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+}
+.solution-title{
+  font-size: 3em;
+  font-weight: normal;
+}
+.solution-sub{
+  font-size: 1.2em;
+}
+
+/* 導入  黒 */
+.solution-bk{
+  background: #000;
+  color: #fff;
+  padding: 10% 0;
+}
+.solution-bk__title{
+  font-size: 2em;
+  font-weight: normal;
+  margin-bottom: 5%;
+}
+.solution-bk__desk{
+  line-height: 1.5em;
+}
+
+/* サービス */
+
+.service-title{
+  margin: 5%;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* サービスgrid版 ↓*/
+/*
+.service-grid{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 550px 550px;
+  grid-template-rows: 300px 300px;
+}
+
+.service-title{
+  margin: 3%;
+  font-size: 2em;
+  text-align: center;
+}
+.service-container__desc{
+  margin-bottom: 10px;
+} */
+
+サービスflex版↓
+.service-flex{
+  width: 2000px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.service-image{
+  width: 530px;
+  height: 250px;
+}
+.service-desc{
+  line-height: 1.5em;
+  font-size: 1.1em;
+  width: 530px;
+}
+.service-container{
+  width: 550px;
+}
