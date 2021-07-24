@@ -1,0 +1,154 @@
+/* 全体 */
+body{
+  font-family: "Gothic A1",'Franklin Gothic Medium', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+li{
+  list-style: none;
+}
+
+/* ヘッダー */
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+}
+img.header-title{
+  margin: 0 2em; 
+  width: 80px;
+}
+.header-nav-list{
+  font-weight: bold;
+  display: flex;
+}
+.header-nav-list__item:not(:last-child){
+  margin-right: 30px;
+}
+
+/* 画像＋ニュース文字 */
+.news-main-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.news-main-image{
+  width: 100%;
+  text-align: center;
+  height: 300px;
+}
+.news-title{
+  font-size: 2em;
+  color: #fff;
+  position: absolute;
+}
+
+/* ニュース一覧↓ */
+.news{
+  margin-bottom: 70px;
+}
+.news-content{
+  display: flex;
+  background-color: #fff;
+  border: solid 1px #000;
+  color: #000;
+  width: 1000px;
+  align-items: center;
+  line-height: 70px;
+  margin: 20px auto;
+}
+.news-content-item{
+  margin-left: 15px;
+}
+.news-content-topic{
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* contact↓ */
+.contact{
+  padding: 50px;
+  background-color:#f5f6f9 ;
+}
+.contact-title{
+  font-size: 2em;
+  margin: 30px;
+  font-weight: normal;
+  text-align: center;
+}
+.contact-desc{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contact-btn{
+  margin: auto;
+  margin-top: 10px;
+  font-weight: bold;
+  background-color: #cd0224;
+  color: #fff;
+  width: 300px ;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+/* footer↓ */
+.footer-title{
+  margin: 0 2%;
+}
+.footer{
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  font-size: 0.8em;
+  justify-content: space-between;
+  height: 50px;
+  line-height: 50px;
+  padding-right: 3%;
+}
+.footer-nav__list{
+  display: flex;
+}
+.footer-nav__item:not(:last-child)::after{
+  content: "|";
+  padding: 10px;
+}
+
+/* レスポンシブ↓max768px */
+@media screen and (max-width: 768px){
+  /* ヘッダー↓ */
+  .header-nav-list{
+    display: none;
+  }
+  .news-content{
+    width: 90%;
+    line-height: 2.8em;
+  }
+  .news-content-topic{
+    font-weight: bold;
+  }
+    /* footer ↓ */
+    .footer-title{
+      margin: auto;
+    }
+    .footer-nav__list{
+      display: flex;
+      flex-direction: column;
+      line-height: 200%;
+    }
+    .footer{
+      height: 100%;
+      justify-content: center;
+    }
+    .footer-nav__item:not(:last-child)::after{
+      content: "";
+      padding: 10px;
+    }
+  
+}

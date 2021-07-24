@@ -1,0 +1,167 @@
+/* 全体 */
+body{
+  font-family: "Gothic A1",'Franklin Gothic Medium', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+li{
+  list-style: none;
+}
+
+/* ヘッダー */
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+}
+img.header-title{
+  width: 80px;
+  margin: 0 2em;
+}
+.header-nav-list{
+  font-weight: bold;
+  display: flex;
+}
+.header-nav-list__item:not(:last-child){
+  margin-right: 30px;
+}
+
+.recruit-main-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.recruit-main-image{
+  width: 100%;
+  text-align: center;
+  height: 300px;
+}
+.recruit-main-title{
+  font-size: 2em;
+  font-weight: normal;
+  color: #fff;
+  position: absolute;
+}
+
+
+/* 新卒採用～↓ */
+
+.recruit-container{
+  justify-content: center;
+}
+.job-table-title{
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 2.5em;
+  font-weight: bold;
+  border-bottom: solid 1px #000;
+}
+.job-table-subtitle{
+  margin: auto;
+  line-height: 5em;
+}
+.job-table{
+  width: 1000px;
+  margin: auto;
+  margin-bottom: 5%;
+  border: solid 1px #000;
+  line-height: 3.2em;
+}
+.job-table-item{
+  width: 200px;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background-color: #efefef;
+}
+.job-table-sub{
+  width: 500px;
+  border-bottom: 1px solid #000;
+  padding-left:10px ;
+}
+
+/* contact↓ */
+.contact{
+  padding: 50px;
+  background-color:#f5f6f9 ;
+}
+.contact-title{
+  font-size: 2em;
+  margin: 30px;
+  font-weight: normal;
+  text-align: center;
+}
+.contact-desc{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.content-btn{
+  margin: auto;
+  margin-top: 10px;
+  font-weight: bold;
+  background-color: #cd0224;
+  color: #fff;
+  width: 300px ;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+/* footer↓ */
+.footer-title{
+  margin: 0 2%;
+}
+.footer{
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  font-size: 0.8em;
+  justify-content: space-between;
+  height: 50px;
+  line-height: 50px;
+  padding-right: 3%;
+}
+.footer-nav__list{
+  display: flex;
+}
+.footer-nav__item:not(:last-child)::after{
+  content: "|";
+  padding: 10px;
+}
+@media screen and (max-width: 767px){
+  .header-nav-list{
+    display: none;
+  }
+
+  .recruit-container{
+    justify-content: center;
+  }
+
+  .job-table{
+    width: 90%;
+  }
+
+    /* footer ↓ */
+    .footer-title{
+      margin: auto;
+    }
+    .footer-nav__list{
+      display: flex;
+      flex-direction: column;
+      line-height: 200%;
+    }
+    .footer{
+      height: 100%;
+      justify-content: center;
+    }
+    .footer-nav__item:not(:last-child)::after{
+      content: "";
+      padding: 10px;
+    }
+  
+}
