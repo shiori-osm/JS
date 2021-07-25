@@ -1,6 +1,7 @@
 /* 全体 */
 body{
   font-family: "Gothic A1",'Franklin Gothic Medium', sans-serif;
+  line-height: 1;
 }
 a{
   text-decoration: none;
@@ -8,6 +9,9 @@ a{
 }
 li{
   list-style: none;
+}
+main{
+  box-sizing: border-box;
 }
 
 /* ヘッダー */
@@ -33,6 +37,9 @@ li{
 
 
 /* 導入 */
+.solution{
+  width: 100%;
+}
 .solution-image{
   width: 100%;
 }
@@ -68,7 +75,7 @@ li{
   padding: 10% 0;
 }
 .solution-bk-center{
-  width: 1000px;
+  width: 80%;
   margin: auto;
 }
 .solution-bk__title{
@@ -115,7 +122,8 @@ li{
   line-height: 1.8em;
 }
 
-.service-btn{
+/* ボタン 共通 */
+.btn{
   margin: auto;
   font-weight: bold;
   background-color: #cd0224;
@@ -128,12 +136,12 @@ li{
 
 /* ニュース↓ */
 .news{
+  width: 100%;
   background-color: #000;
   color: #fff;
   height: 500px;
 }
 .news-header{
-  width: 1000px;
   margin: auto;
 }
 .news-header-item{
@@ -144,21 +152,12 @@ li{
   font-size: 2em;
   margin-top: 5%;
 }
-.news-btn{
-  margin-top: 10%;
-  font-weight: bold;
-  background-color: #cd0224;
-  color: #fff;
-  width: 300px ;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-}
+
 .news-content{
   display: flex;
   background-color: #fff;
   color: #000;
-  width: 1000px;
+  width: 80%;
   align-items: center;
   line-height: 70px;
   margin: 20px auto;
@@ -186,6 +185,9 @@ li{
 .blog-desc{
   font-size: 1.1em;
   font-weight: bold;
+}
+.blog-container{
+  margin-right: 2%;
 }
 .blog{
   margin-bottom: 5%;
@@ -239,17 +241,7 @@ li{
   text-align: center;
   margin-bottom: 30px;
 }
-.content-btn{
-  margin: auto;
-  margin-top: 10px;
-  font-weight: bold;
-  background-color: #cd0224;
-  color: #fff;
-  width: 300px ;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-}
+
 
 /* footer↓ */
 .footer-title{
@@ -286,7 +278,7 @@ li{
     display: block;
   }
 
-  .nav1{
+  .hg-menu{
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -295,10 +287,10 @@ li{
     transition: .7s;
     text-align: center;
   }
-  .nav ul{
+  .hg-menu-list{
     padding-top: 50px;
   }
-  .nav ul li{
+ .hg-menu-list__item{
     list-style-type: none;
     font-size: 1.2em;
     margin-top: 50px;
@@ -317,7 +309,7 @@ li{
     display: inline-block;
     width: 100%;
     height: 4px;
-    background-color: deeppink;
+    background-color: #333;
     position: absolute;
     transition: 0.5s;
   }
@@ -341,7 +333,7 @@ li{
     top: 14px;
     transform: rotate(-45deg);
   }
-  .in{
+  .show{
     transform: translateX(100%);
   }
 
@@ -406,14 +398,14 @@ li{
   }
 
   .news{
-    height: 360px;
+    height: 100%;
   }
   .news-header, .news-content{
-    width: 600px;
+    width:100%;
   }
   .news-content{
     line-height: 50px;
-    width: 600px;
+    width: 80%;
   }
 
   .blog-flex{

@@ -15,12 +15,13 @@
 
 
 // 教科書の↓
-const target = document.getElementById("menu");
-target.addEventListener('click', () => {
-  target.classList.toggle('open');
-  const nav = document.getElementById("nav");
-  nav.classList.toggle('in');
-});
+  const target = document.getElementById("menu");
+  const hgMenu = document.getElementById("hg-menu");
+
+  target.addEventListener('click', () => {
+    target.classList.toggle('open');
+    hgMenu.classList.toggle('show');
+  });
 
 }
 
