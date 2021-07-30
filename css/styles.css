@@ -140,6 +140,7 @@ main{
   background-color: #000;
   color: #fff;
   height: 100%;
+  padding: 5%;
 }
 .news-title{
   font-size: 2em;
@@ -404,8 +405,9 @@ main{
     flex-direction: column;
   }
 
-  .news-header, .news-content{
-    width:100%;
+  /* ニュース↓ */
+  .news-header{
+    align-items: baseline;
   }
   .news-content{
     line-height: 50px;
