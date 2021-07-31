@@ -88,6 +88,10 @@ main{
 }
 
 /* サービス↓ */
+.service{
+  width: 85%;
+  margin: auto;
+}
 .service-title{
   margin: 5%;
   font-size: 2em;
@@ -100,24 +104,24 @@ main{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 30px; 
 }
-.service-container{
-  margin: 10px;
-}
+/* .service-container{
+  margin: 5%;
+} */
 .service-image{
-  width: 530px;
-  margin-right: 20px;
-  height: 250px;
+  width: 70%;    /*mもともと530pxでうまくいってた*/
+  margin-right: 2%;
   margin-bottom: 5px;
 }
 .service-desc__title{
+  width: 70%;
   margin: 5px;
   font: 1.2em;
   font-weight: bold;
 }
 .service-desc{
-  width: 530px;
+  width: 70%;   /*mもともと530pxでうまくいってた*/
   font: 1.2em;
   line-height: 1.8em;
 }
@@ -136,7 +140,7 @@ main{
 
 /* ニュース↓ */
 .news{
-  width: 100%;
+  width: calc(100% - 5% - 5%);
   background-color: #000;
   color: #fff;
   height: 100%;
@@ -174,15 +178,19 @@ main{
 }
 
 /* blog↓ */
+.blog{
+  width: 90%;
+  margin: auto;
+}
 .blog-title{
   font-size: 2em;
   margin-top: 5%;
   font-weight: normal;
   text-align: center;
-  margin: 5%;
+  margin: 2%;
 }
 .blog-image{
-  width: 350px;
+  width: 100%;
 }
 .blog-flex{
   display: flex;
@@ -193,7 +201,7 @@ main{
   font-size: 1.1em;
   font-weight: bold;
 }
-.blog-container{
+.blog-container:not(:last-child){
   margin-right: 2%;
 }
 .blog{

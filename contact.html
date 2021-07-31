@@ -12,7 +12,7 @@
 </head>
 <body>
   <header class="header">
-    <h1><a href="index.html"><img src="img/logo.png" alt="" class="header-title"></a></h1>
+    <h1><a href="index.html"><img src="img/logo.png" alt="" class="header-logo"></a></h1>
     <nav>
       <ul class="header-nav-list">
         <li class="header-nav-list__item"><a href="index.html">ホーム</a></li>
@@ -55,23 +55,22 @@
 
   <section class="contact-form">
     <form class="contact-form-container">
-      <label class="contact-form-title con" for="name">会社名</label>
-      <input class="contact-form-input" type="text">
-    </form>
-    <form class="contact-form-container">
-      <label class="contact-form-title__" for="name">お名前</label>
-      <input class="contact-form-input" type="text" name="name" title="このフィールドを入力してください" required>
-    </form>
-    <form class="contact-form-container">
-      <label class="contact-form-title__" for="address">メールアドレス</label>
-      <input class="contact-form-input" type="email" title="このフィールドを入力してください" required>
-    </form>
-    <form action="" method="post">
-      <p class="contact-form-title__">お問い合わせ内容</p>
-      <textarea name="commit" class="contact-form-contact" required></textarea>
-    </form>
-
-    <form method="post" action=".html">
+      <div class="contact-form-container-item">
+        <p class="contact-form-title">会社名</p>
+        <input class="contact-form-input" type="text">
+      </div>
+      <div class="contact-form-container-item">
+        <p class="contact-form-title__">お名前</p>
+        <input class="contact-form-input" type="text" name="name" title="このフィールドを入力してください" required>
+      </div>
+      <div class="contact-form-container-item">
+        <p class="contact-form-title__">メールアドレス</p>
+        <input class="contact-form-input" type="text" name="email" title="このフィールドを入力してください" required>
+      </div>
+      <div class="contact-form-container-item">
+        <p class="contact-form-title__">お問い合わせ内容</p>
+        <textarea name="commit" class="contact-form-contact" required></textarea>
+      </div>
       <input type="submit" value="お申込み" class="contact-form-btn">
     </form>
   </section>

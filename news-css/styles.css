@@ -18,9 +18,9 @@ li{
   align-items: center;
   height: 5em;
 }
-img.header-title{
-  margin: 0 2em; 
-  width: 80px;
+.header-logo{
+  width: 40%;
+  margin-left: 15%;
 }
 .header-nav-list{
   font-weight: bold;

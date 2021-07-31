@@ -18,9 +18,9 @@ li{
   align-items: center;
   height: 5em;
 }
-img.header-title{
-  width: 80px;
-  margin: 0 2em;
+.header-logo{
+  width: 40%;
+  margin-left: 15%;
 }
 .header-nav-list{
   font-weight: bold;
@@ -45,7 +45,7 @@ img.header-title{
   height: 300px;
 }
 .blog-title{
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: normal;
   color: #fff;
   position: absolute;
