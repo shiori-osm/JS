@@ -89,13 +89,17 @@ main{
 
 /* サービス↓ */
 .service{
-  width: 85%;
+  width: 90%;
   margin: auto;
 }
 .service-title{
   margin: 5%;
   font-size: 2em;
   text-align: center;
+}
+.service-container{
+  width: 50%;
+  margin: auto;
 }
 .service{
   margin: 10% 0;
@@ -106,9 +110,6 @@ main{
   justify-content: center;
   margin-bottom: 30px; 
 }
-/* .service-container{
-  margin: 5%;
-} */
 .service-image{
   width: 70%;    /*mもともと530pxでうまくいってた*/
   margin-right: 2%;
